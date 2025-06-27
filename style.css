@@ -1,0 +1,143 @@
+body {
+  background: url('https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.todo-container {
+  background-color: rgba(51, 51, 51, 0.75);
+  backdrop-filter: blur(5px);
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 600px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.datetime {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  resize: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.input-area button {
+  background-color: #2962ff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-area button:hover {
+  background-color: #0039cb;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #444;
+  margin: 8px 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+li.completed label {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.edit, .delete {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.edit {
+  color: #ffd54f;
+}
+
+.edit:hover {
+  color: #ffb300;
+}
+
+.delete {
+  color: #ff5c5c;
+}
+
+.delete:hover {
+  color: #ff0000;
+}
+
+.reset-area {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.reset-btn {
+  background-color: #d32f2f;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #b71c1c;
+}
